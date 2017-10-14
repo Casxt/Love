@@ -24,10 +24,10 @@
         var name = document.getElementById("inputname").value;
         if(name.length >= 2){
             if(name=="maoxin"||name=="毛欣"||name=="毛欣欣"||name=="maoxinxin"||name=="mxx"||name=="mx"||name=="欣欣"||name=="毛毛"){
-               alert("你是自恋吗？");
+               var ForMyLove = "我要告诉全世界，这个域名，被你承包了";
                }
             else if(name=="zk"||name=="maple"||name=="张楷"||name=="楷楷"||name=="楷"){
-               document.getElementById("for-my-love").text = "上邪，\n\
+               var ForMyLove = "上邪，\n\
 我欲与君相知，\n\
 长命无绝衰。\n\
 山无陵，\n\
@@ -38,8 +38,9 @@
 乃敢与君绝。";
                }
             else{
-               alert("很抱歉这里不是为你承包的");
+               var ForMyLove = "很抱歉这里不是为你承包的";
               }
+            document.getElementById("for-my-love").innerHTML = ForMyLove;
            }
         }
     </script>
