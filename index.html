@@ -71,7 +71,14 @@
                     }
                }
             else{
-               var ForMyLove = "很抱歉这里不是为你承包的";
+               switch(randomNum(1,2)){ 
+                    case 1: 
+                    var ForMyLove = "很抱歉这里不是为你承包的";
+                    break;
+                    case 2: 
+                    var ForMyLove = "对不起我们不熟";
+                    break;
+                    }
               }
             document.getElementById("for-my-love").innerHTML = ForMyLove;
            }
